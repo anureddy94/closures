@@ -1,0 +1,28 @@
+<!docype html>
+<html>
+<head></head>
+
+
+
+<body>
+<script type="text/javascript">
+function sum(a,b,c,d)//outer function
+{
+	var returnValue="";
+	
+	function add() //innner function
+{
+	return returnValue + (a+b+c+d);
+
+	}
+	return add();//outer function is going to call inner function
+
+}
+var result=sum(-1,-2,3,4); // invoking addnum function
+document.write(result);
+
+
+
+</script>
+</body>
+</html>
